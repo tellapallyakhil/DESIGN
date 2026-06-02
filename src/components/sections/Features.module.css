@@ -1,0 +1,311 @@
+/* ── Features Section — Bento Grid ── */
+.features {
+  position: relative;
+  padding: var(--space-5xl) 0;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+  animation: fadeInUp 0.6s ease;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--neon-pink);
+  background: rgba(255, 45, 120, 0.08);
+  border: 1px solid rgba(255, 45, 120, 0.2);
+  padding: 0.3rem 0.9rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+.accent {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 550px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Bento Grid ── */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: var(--space-lg);
+}
+
+/* Card Sizes */
+.card_wide {
+  grid-column: span 2;
+}
+
+.card_tall {
+  grid-row: span 2;
+}
+
+.card_normal {
+  grid-column: span 1;
+}
+
+/* Card Base */
+.card {
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease backwards;
+  cursor: default;
+  transition: var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--glass-border-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
+}
+
+.cardContent {
+  padding: var(--space-xl) var(--space-xl) var(--space-md);
+  flex-shrink: 0;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.cardIcon {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-card);
+  border: 1px solid var(--glass-border);
+  transition: var(--transition-base);
+}
+
+.card:hover .cardIcon {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 45, 120, 0.15);
+}
+
+.cardTag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--neon-purple-light);
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.cardDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Card Glow */
+.cardGlow {
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100px;
+  background: radial-gradient(ellipse, rgba(255, 45, 120, 0.06), transparent 70%);
+  filter: blur(40px);
+  opacity: 0;
+  transition: var(--transition-slow);
+  pointer-events: none;
+}
+
+.card:hover .cardGlow {
+  opacity: 1;
+}
+
+/* ── Mini Visuals ── */
+
+/* Bar chart */
+.miniMetrics {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  padding: 0 var(--space-xl) var(--space-lg);
+  min-height: 80px;
+}
+
+.bar {
+  flex: 1;
+  border-radius: 3px 3px 0 0;
+  min-height: 8px;
+  opacity: 0;
+  animation: barGrow 0.5s ease forwards;
+}
+
+@keyframes barGrow {
+  from { opacity: 0; height: 0 !important; }
+  to { opacity: 0.8; }
+}
+
+/* Code skeleton */
+.miniCode {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: var(--space-sm) var(--space-xl) var(--space-lg);
+}
+
+.codeLine {
+  height: 6px;
+  border-radius: var(--radius-full);
+  opacity: 0;
+  animation: codeAppear 0.3s ease forwards;
+}
+
+@keyframes codeAppear {
+  from { opacity: 0; width: 0 !important; }
+  to { opacity: 0.25; }
+}
+
+/* Graph */
+.miniGraph {
+  flex: 1;
+  padding: 0 var(--space-xl) var(--space-lg);
+  min-height: 80px;
+}
+
+.graphSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.graphLine {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: drawLine 2s ease forwards 0.5s;
+}
+
+@keyframes drawLine {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Integration nodes */
+.miniIntegrations {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-xl) var(--space-lg);
+  position: relative;
+}
+
+.intNode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: rgba(168, 85, 247, 0.06);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+  font-size: 0.9rem;
+  color: var(--neon-purple-light);
+  opacity: 0;
+  animation: nodePopIn 0.4s ease forwards;
+  transition: var(--transition-base);
+}
+
+.intNode:hover {
+  background: rgba(255, 45, 120, 0.1);
+  border-color: rgba(255, 45, 120, 0.25);
+  transform: scale(1.15);
+}
+
+@keyframes nodePopIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 0.7; transform: scale(1); }
+}
+
+.intLine {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.15), transparent);
+  z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card_wide { grid-column: span 2; }
+  .card_tall { grid-row: span 1; }
+}
+
+@media (max-width: 640px) {
+  .bento {
+    grid-template-columns: 1fr;
+  }
+
+  .card_wide { grid-column: span 1; }
+}
