@@ -4,23 +4,23 @@ import styles from "./Testimonials.module.css";
 const testimonials = [
   {
     quote:
-      "Startr Studio successfully modernized our legacy customer portal into a unified Next.js experience. They slashed page load speeds by 70% and delivered a secure, cloud-native architecture on schedule.",
+      "Shaik and Prasad modernized our legacy reservations system into the unified HMS Core. The real-time occupancy updates and automated guest check-in reduced customer wait times by 60%.",
     name: "Dr. Rajesh Kumar",
-    role: "CIO, Tata Global Services",
+    role: "CIO, Taj Hotels & Resorts",
     avatar: "RK",
   },
   {
     quote:
-      "Their application modernization and performance engineering was a complete game-changer. Our core platform vitals jumped to 100/100, saving us over $40k/mo in server costs while driving organic traffic up by 150%.",
+      "The HMS Core room allocation module is incredibly fast. Moving to their Next.js and PostgreSQL engine helped our housekeeping staff coordinate rooms 40% faster.",
     name: "Aarav Sharma",
-    role: "Director of Technology, Reliance Digital",
+    role: "Director of Operations, ITC Hotels",
     avatar: "AS",
   },
   {
     quote:
-      "From architectural design to DevOps automation, Startr delivered a robust, edge-native infrastructure. Their integration of headless CMS modules and ERP middleware was flawless.",
+      "Our digital room booking, billing, and guest profiling systems are now fully synchronized via their secure HMS API gateways. The deployment was flawless.",
     name: "Ananya Iyer",
-    role: "Head of Digital Experience, HDFC Bank",
+    role: "VP of Digital, Oberoi Group",
     avatar: "AI",
   },
 ];
