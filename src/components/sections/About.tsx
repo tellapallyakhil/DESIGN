@@ -35,10 +35,6 @@ export default function About() {
                 <div className={styles.photoGlow} />
                 <div className={styles.photoBorder} />
               </div>
-              <div className={styles.statusChip}>
-                <span className={styles.statusDot} />
-                <span>Lead Architect</span>
-              </div>
             </div>
             <div className={styles.founderInfo}>
               <span className={styles.founderLabel}>Founder & CEO</span>
@@ -80,10 +76,6 @@ export default function About() {
                 />
                 <div className={styles.photoGlow} />
                 <div className={styles.photoBorder} />
-              </div>
-              <div className={styles.statusChip}>
-                <span className={styles.statusDot} />
-                <span>Technical Director</span>
               </div>
             </div>
             <div className={styles.founderInfo}>
