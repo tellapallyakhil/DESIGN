@@ -4,23 +4,23 @@ import styles from "./Testimonials.module.css";
 const testimonials = [
   {
     quote:
-      "Shaik and Prasad modernized our legacy reservations system into the unified HMS Core. The real-time occupancy updates and automated guest check-in reduced customer wait times by 60%.",
+      "Shaik and Prasad modernized our entire front-desk operations into the unified HMS Core platform. The real-time occupancy dashboard and automated guest check-in reduced our customer wait times by 60%.",
     name: "Dr. Rajesh Kumar",
-    role: "CIO, Taj Hotels & Resorts",
+    role: "General Manager, Hotel Nallabagam",
     avatar: "RK",
   },
   {
     quote:
-      "The HMS Core room allocation module is incredibly fast. Moving to their Next.js and PostgreSQL engine helped our housekeeping staff coordinate rooms 40% faster.",
+      "The HMS Core room allocation engine is incredibly fast and reliable. Our housekeeping staff now coordinates rooms 40% faster, and billing errors have dropped to nearly zero since we went live.",
     name: "Aarav Sharma",
-    role: "Director of Operations, ITC Hotels",
+    role: "Director of Operations, Radha Krishna Hotels",
     avatar: "AS",
   },
   {
     quote:
-      "Our digital room booking, billing, and guest profiling systems are now fully synchronized via their secure HMS API gateways. The deployment was flawless.",
+      "Our digital room booking, billing, and guest profiling systems are now fully synchronized through the HMS API layer. The deployment was seamless — our staff picked it up within a day.",
     name: "Ananya Iyer",
-    role: "VP of Digital, Oberoi Group",
+    role: "Head of Hospitality Tech, Nallabagam Group",
     avatar: "AI",
   },
 ];

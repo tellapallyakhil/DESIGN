@@ -179,25 +179,47 @@
   width: 100%;
   height: 100vh;
   flex-direction: column;
-  gap: var(--space-md);
-  padding: var(--space-xl);
+  gap: 0;
+  padding: var(--space-lg) var(--space-xl);
   background: #0a0a0f;
   border-top: 1px solid var(--glass-border);
   animation: fadeInDown 0.3s ease;
   z-index: 999;
+  overflow-y: auto;
 }
 
 .mobileMenu a {
-  font-size: 1.1rem;
+  display: block;
+  font-size: 1.05rem;
   font-weight: 500;
   color: var(--text-secondary);
-  padding: var(--space-sm) 0;
+  padding: var(--space-md) 0;
   transition: var(--transition-fast);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+  text-align: left;
+}
+
+.mobileMenu a:last-child {
+  border-bottom: none;
 }
 
 .mobileMenu a:hover {
   color: var(--text-primary);
+}
+
+/* Override the gradient CTA button style inside mobile menu */
+.mobileMenu .ctaBtn {
+  display: block;
+  text-align: center;
+  margin-top: var(--space-lg);
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  border-bottom: none;
 }
 
 @media (max-width: 768px) {
