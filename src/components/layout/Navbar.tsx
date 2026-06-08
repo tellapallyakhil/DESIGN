@@ -27,10 +27,10 @@ export default function Navbar() {
         {/* Desktop Links */}
         <ul className={styles.links}>
           <li><a href="/#features" id="nav-features">Services</a></li>
-          <li><a href="/#stats" id="nav-stats">Results</a></li>
+          <li><a href="/#projects" id="nav-projects">Case Study</a></li>
           <li><a href="/#testimonials" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="/#about" id="nav-about">About</a></li>
           <li><a href="/#pricing" id="nav-pricing">Packages</a></li>
-          <li><a href="/about" id="nav-about">About</a></li>
         </ul>
 
         {/* CTA */}
@@ -61,10 +61,10 @@ export default function Navbar() {
       {mobileOpen && (
         <div className={styles.mobileMenu} id="mobile-menu">
           <a href="/#features" onClick={() => setMobileOpen(false)}>Services</a>
-          <a href="/#stats" onClick={() => setMobileOpen(false)}>Results</a>
+          <a href="/#projects" onClick={() => setMobileOpen(false)}>Case Study</a>
           <a href="/#testimonials" onClick={() => setMobileOpen(false)}>Testimonials</a>
+          <a href="/#about" onClick={() => setMobileOpen(false)}>About</a>
           <a href="/#pricing" onClick={() => setMobileOpen(false)}>Packages</a>
-          <a href="/about" onClick={() => setMobileOpen(false)}>About</a>
           <a href="/#cta" className={styles.ctaBtn} onClick={() => setMobileOpen(false)}>
             Book a Call
           </a>

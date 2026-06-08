@@ -84,7 +84,7 @@ export default function AboutPage() {
                   </div>
                   <div className={styles.statusChip}>
                     <span className={styles.statusDot} />
-                    <span>Building in public</span>
+                    <span>Lead Architect</span>
                   </div>
                 </div>
                 <div className={styles.founderInfo}>
@@ -133,7 +133,7 @@ export default function AboutPage() {
                   </div>
                   <div className={styles.statusChip}>
                     <span className={styles.statusDot} />
-                    <span>Shipping fast</span>
+                    <span>Technical Director</span>
                   </div>
                 </div>
                 <div className={styles.founderInfo}>

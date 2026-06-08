@@ -5,23 +5,23 @@ const testimonials = [
   {
     quote:
       "Startr Studio successfully modernized our legacy customer portal into a unified Next.js experience. They slashed page load speeds by 70% and delivered a secure, cloud-native architecture on schedule.",
-    name: "Sarah Chen",
-    role: "CIO, Aventis Global",
-    avatar: "SC",
+    name: "Dr. Rajesh Kumar",
+    role: "CIO, Tata Global Services",
+    avatar: "RK",
   },
   {
     quote:
       "Their application modernization and performance engineering was a complete game-changer. Our core platform vitals jumped to 100/100, saving us over $40k/mo in server costs while driving organic traffic up by 150%.",
-    name: "Marcus Rivera",
-    role: "Director of Engineering, Veridian Tech",
-    avatar: "MR",
+    name: "Aarav Sharma",
+    role: "Director of Technology, Reliance Digital",
+    avatar: "AS",
   },
   {
     quote:
       "From architectural design to DevOps automation, Startr delivered a robust, edge-native infrastructure. Their integration of headless CMS modules and ERP middleware was flawless.",
-    name: "Aisha Patel",
-    role: "Head of Digital Experience, Nova Health",
-    avatar: "AP",
+    name: "Ananya Iyer",
+    role: "Head of Digital Experience, HDFC Bank",
+    avatar: "AI",
   },
 ];
 
