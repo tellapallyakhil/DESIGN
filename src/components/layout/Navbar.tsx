@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}
+      className={`${styles.navbar} ${scrolled || mobileOpen ? styles.scrolled : ""}`}
     >
       <div className={styles.inner}>
         {/* Logo */}
@@ -27,7 +27,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <ul className={styles.links}>
           <li><a href="/#features" id="nav-features">Services</a></li>
-          <li><a href="/#projects" id="nav-projects">Case Study</a></li>
+          <li><a href="/#projects" id="nav-projects">Projects</a></li>
           <li><a href="/#testimonials" id="nav-testimonials">Testimonials</a></li>
           <li><a href="/#about" id="nav-about">About</a></li>
           <li><a href="/#pricing" id="nav-pricing">Packages</a></li>
@@ -61,7 +61,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className={styles.mobileMenu} id="mobile-menu">
           <a href="/#features" onClick={() => setMobileOpen(false)}>Services</a>
-          <a href="/#projects" onClick={() => setMobileOpen(false)}>Case Study</a>
+          <a href="/#projects" onClick={() => setMobileOpen(false)}>Projects</a>
           <a href="/#testimonials" onClick={() => setMobileOpen(false)}>Testimonials</a>
           <a href="/#about" onClick={() => setMobileOpen(false)}>About</a>
           <a href="/#pricing" onClick={() => setMobileOpen(false)}>Packages</a>

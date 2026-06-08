@@ -8,13 +8,13 @@ export default function Projects() {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <span className={styles.eyebrow}>Case Studies</span>
+          <span className={styles.eyebrow}>Our Projects</span>
           <h2 className={styles.title} id="projects-section-title">
             Featured
-            <span className={styles.accent}> Engagements</span>
+            <span className={styles.accent}> Work</span>
           </h2>
           <p className={styles.subtitle}>
-            Explore our architectural excellence through our latest digital transformation case study.
+            Explore our architectural excellence through our latest digital transformation project.
           </p>
         </div>
 
