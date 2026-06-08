@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Startr — Launch Your Next Big Thing",
+  title: "Startr Studio — High-Performance Web Creation & Optimization",
   description:
-    "The AI-powered platform that turns your ideas into production-ready products. Build, ship, and scale faster than ever before.",
-  keywords: ["SaaS", "AI", "startup", "platform", "launch", "build"],
+    "Bespoke web design, full-stack Next.js development, and technical Core Web Vitals optimization. We turn your digital presence into a growth engine.",
+  keywords: ["web design", "Next.js agency", "web optimization", "Core Web Vitals", "SEO agency", "custom web development"],
   openGraph: {
-    title: "Startr — Launch Your Next Big Thing",
+    title: "Startr Studio — High-Performance Web Creation & Optimization",
     description:
-      "The AI-powered platform that turns your ideas into production-ready products.",
+      "Bespoke web design, Next.js development, and technical Core Web Vitals speed optimization.",
     type: "website",
   },
 };

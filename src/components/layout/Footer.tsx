@@ -1,10 +1,10 @@
 import styles from "./Footer.module.css";
 
 const footerLinks = {
-  Product: ["Features", "Pricing", "Changelog", "Documentation", "API"],
-  Company: ["About", "Blog", "Careers", "Press"],
-  Resources: ["Community", "Guides", "Templates", "Support"],
-  Legal: ["Privacy", "Terms", "Security", "GDPR"],
+  Services: ["Web Development", "Speed Optimization", "Technical SEO", "UI/UX Design", "Headless CMS"],
+  Company: ["About Us", "Our Process", "Case Studies", "Contact"],
+  Resources: ["Web Speed Audit", "Blog", "Free Diagnostic", "Templates"],
+  Legal: ["Privacy Policy", "Terms of Service", "Security", "SLA Summary"],
 };
 
 export default function Footer() {
@@ -20,7 +20,7 @@ export default function Footer() {
               <span className={styles.logoText}>Startr</span>
             </div>
             <p className={styles.tagline}>
-              Build the future, ship at light speed.
+              Bespoke web creation and performance optimization.
             </p>
             <div className={styles.socials}>
               {["𝕏", "◉", "▶", "⬡"].map((icon, i) => (

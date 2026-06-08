@@ -2,16 +2,16 @@
 import styles from "./LogoMarquee.module.css";
 
 const brands = [
-  "Vercel",
-  "Stripe",
-  "Linear",
-  "Notion",
+  "Next.js",
+  "React",
+  "Tailwind",
   "Figma",
+  "Stripe",
+  "Shopify",
+  "Sanity",
   "Supabase",
-  "Railway",
-  "Planetscale",
-  "Clerk",
-  "Resend",
+  "Vercel",
+  "AWS",
 ];
 
 export default function LogoMarquee() {
@@ -20,7 +20,7 @@ export default function LogoMarquee() {
   return (
     <section className={styles.marquee} id="logo-marquee">
       <div className={styles.header}>
-        <p className={styles.label}>Trusted by teams at</p>
+        <p className={styles.label}>Technologies and platforms we leverage</p>
       </div>
       <div className={styles.track}>
         <div className={styles.inner}>

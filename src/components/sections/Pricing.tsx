@@ -3,52 +3,50 @@ import styles from "./Pricing.module.css";
 
 const plans = [
   {
-    name: "Starter",
-    price: "0",
-    period: "forever",
-    description: "Perfect for side projects and experimentation.",
+    name: "Modernization Audit",
+    price: "Quote",
+    period: " / project",
+    description: "Deep-dive technical assessment of Core Web Vitals, speed bottlenecks, and search visibility.",
     features: [
-      "3 projects",
-      "1GB storage",
-      "Community support",
-      "Basic analytics",
-      "Shared compute",
+      "Lighthouse performance diagnostics",
+      "Core Web Vitals gap analysis",
+      "Legacy codebase dependency check",
+      "Actionable remediation blueprint",
+      "Consultation with Lead Architect",
     ],
-    cta: "Get Started",
+    cta: "Request Audit Scoping",
     popular: false,
   },
   {
-    name: "Pro",
-    price: "29",
-    period: "/month",
-    description: "For serious builders shipping to production.",
+    name: "Bespoke Engineering",
+    price: "Custom",
+    period: " scoping",
+    description: "End-to-end digital product engineering, Next.js architecture, and CMS integrations.",
     features: [
-      "Unlimited projects",
-      "50GB storage",
-      "Priority support",
-      "Advanced analytics",
-      "Dedicated compute",
-      "AI Code Engine",
-      "Custom domains",
+      "Enterprise systems architecture design",
+      "Next-generation Next.js engineering",
+      "Secure API integration & middleware",
+      "Headless CMS setup (Sanity/Shopify)",
+      "High-end motion UI & custom branding",
+      "3-month post-delivery SLA support",
     ],
-    cta: "Start Pro Trial",
+    cta: "Schedule Scoping Call",
     popular: true,
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    description: "For teams that need enterprise-grade controls.",
+    name: "Managed Retainer",
+    price: "Retainer",
+    period: " / monthly",
+    description: "Dedicated engineering team, continuous optimization, and cloud infrastructure management.",
     features: [
-      "Everything in Pro",
-      "Unlimited storage",
-      "24/7 dedicated support",
-      "SOC 2 & HIPAA",
-      "SSO & SAML",
-      "SLA guarantee",
-      "Custom integrations",
+      "Dedicated development squad access",
+      "Continuous speed & conversion tune-ups",
+      "DevOps orchestration (AWS / Vercel)",
+      "Weekly security & dependency updates",
+      "99.99% uptime SLA guarantee",
+      "24/7 critical incident response",
     ],
-    cta: "Contact Sales",
+    cta: "Contact Sales Team",
     popular: false,
   },
 ];
@@ -59,13 +57,13 @@ export default function Pricing() {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <span className={styles.eyebrow}>Pricing</span>
+          <span className={styles.eyebrow}>Engagement Models</span>
           <h2 className={styles.title} id="pricing-title">
-            Simple, transparent
-            <span className={styles.accent}> pricing</span>
+            Flexible, transparent
+            <span className={styles.accent}> engagements</span>
           </h2>
           <p className={styles.subtitle}>
-            Start free. Scale when you&apos;re ready. No hidden fees, no surprises.
+            SLA-backed professional digital consulting and software engineering tailored to your operational requirements.
           </p>
         </div>
 
@@ -76,18 +74,18 @@ export default function Pricing() {
               key={i}
               className={`${styles.card} ${plan.popular ? styles.popular : ""}`}
               style={{ animationDelay: `${i * 0.15}s` }}
-              id={`pricing-${plan.name.toLowerCase()}`}
+              id={`pricing-${plan.name.toLowerCase().replace(/\s+/g, '-')}`}
             >
               {plan.popular && (
                 <div className={styles.popularBadge}>
-                  <span>Most Popular</span>
+                  <span>Recommended</span>
                 </div>
               )}
               <div className={styles.cardBody}>
                 <h3 className={styles.planName}>{plan.name}</h3>
                 <p className={styles.planDesc}>{plan.description}</p>
                 <div className={styles.priceRow}>
-                  {plan.price !== "Custom" && (
+                  {!["Custom", "Quote", "Retainer"].includes(plan.price) && (
                     <span className={styles.dollar}>$</span>
                   )}
                   <span className={styles.priceValue}>{plan.price}</span>

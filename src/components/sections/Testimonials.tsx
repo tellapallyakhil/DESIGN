@@ -4,23 +4,23 @@ import styles from "./Testimonials.module.css";
 const testimonials = [
   {
     quote:
-      "Startr cut our deployment pipeline from 45 minutes to under 3 seconds. Our engineering velocity increased 10x overnight.",
+      "Startr Studio successfully modernized our legacy customer portal into a unified Next.js experience. They slashed page load speeds by 70% and delivered a secure, cloud-native architecture on schedule.",
     name: "Sarah Chen",
-    role: "CTO, NexaFlow",
+    role: "CIO, Aventis Global",
     avatar: "SC",
   },
   {
     quote:
-      "The AI code engine is genuinely mind-blowing. It understood our entire monorepo and generated a complete auth system in minutes.",
+      "Their application modernization and performance engineering was a complete game-changer. Our core platform vitals jumped to 100/100, saving us over $40k/mo in server costs while driving organic traffic up by 150%.",
     name: "Marcus Rivera",
-    role: "Lead Engineer, Drift Labs",
+    role: "Director of Engineering, Veridian Tech",
     avatar: "MR",
   },
   {
     quote:
-      "We scaled from 1K to 2M users without touching infrastructure. Startr's auto-scaling just handled everything seamlessly.",
+      "From architectural design to DevOps automation, Startr delivered a robust, edge-native infrastructure. Their integration of headless CMS modules and ERP middleware was flawless.",
     name: "Aisha Patel",
-    role: "Founder, CloudPeak",
+    role: "Head of Digital Experience, Nova Health",
     avatar: "AP",
   },
 ];
@@ -33,8 +33,8 @@ export default function Testimonials() {
         <div className={styles.header}>
           <span className={styles.eyebrow}>Testimonials</span>
           <h2 className={styles.title} id="testimonials-title">
-            Loved by builders
-            <span className={styles.accent}> worldwide</span>
+            Trusted by clients
+            <span className={styles.accent}> everywhere</span>
           </h2>
         </div>
 

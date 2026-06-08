@@ -4,55 +4,55 @@ import styles from "./Features.module.css";
 const features = [
   {
     icon: "⚡",
-    title: "Lightning Deploy",
+    title: "Application Modernization",
     description:
-      "Push to production in seconds. Zero-config deployments with edge-first architecture and instant rollbacks.",
-    tag: "Core",
+      "Remediate slow legacy platforms. We overhaul frontends to secure 100/100 Core Web Vitals, reducing infrastructure cost and bounce rates.",
+    tag: "Performance",
     size: "wide",
     visual: "metrics",
   },
   {
-    icon: "🧠",
-    title: "AI Code Engine",
+    icon: "💻",
+    title: "Bespoke Product Engineering",
     description:
-      "Generate entire features from natural language. Our AI understands your codebase and writes production-grade code.",
-    tag: "AI",
+      "Scalable Next.js, React, and TypeScript systems built for high traffic. Formulated with robust state engines and micro-frontends.",
+    tag: "Development",
     size: "tall",
     visual: "code",
   },
   {
-    icon: "🔒",
-    title: "Fort Knox Security",
+    icon: "🎨",
+    title: "Experience (DX) Design",
     description:
-      "SOC 2 Type II. E2E encryption, RBAC, audit logs, and automated vulnerability scanning.",
-    tag: "Security",
+      "Modern UI/UX architectures focusing on high conversion, cohesive brand identity, fluid responsiveness, and motion aesthetics.",
+    tag: "Design",
     size: "normal",
     visual: null,
   },
   {
-    icon: "📊",
-    title: "Real-time Analytics",
+    icon: "🔒",
+    title: "Cloud Infrastructure & DevOps",
     description:
-      "Custom dashboards, anomaly detection, and predictive insights powered by ML.",
-    tag: "Insights",
+      "Secure global multi-region deployments, automated CI/CD pipelines, and cloud orchestration (AWS, Vercel, Azure) with SOC 2 policies.",
+    tag: "DevOps",
     size: "normal",
     visual: null,
   },
   {
     icon: "🔌",
-    title: "Universal Integrations",
+    title: "Headless CMS & Middleware",
     description:
-      "Connect with 200+ tools. REST, GraphQL, webhooks — your entire stack, unified.",
-    tag: "Connect",
+      "Integrate headless content managers (Sanity, Contentful) or connect ERP/CRM backends using custom enterprise-grade API layers.",
+    tag: "Integrations",
     size: "normal",
     visual: "integrations",
   },
   {
-    icon: "🚀",
-    title: "Auto-Scaling",
+    icon: "📈",
+    title: "SEO Engineering & Marketing Tech",
     description:
-      "From zero to millions. Intelligent auto-scaling adapts to traffic spikes without breaking a sweat.",
-    tag: "Scale",
+      "Advanced server-side rendering, schema markup orchestration, and real-time marketing analytics to maximize search discoverability.",
+    tag: "Marketing Tech",
     size: "wide",
     visual: "graph",
   },
@@ -159,14 +159,13 @@ export default function Features() {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <span className={styles.eyebrow}>Features</span>
+          <span className={styles.eyebrow}>Consulting & Services</span>
           <h2 className={styles.title} id="features-title">
-            Everything you need to
-            <span className={styles.accent}> dominate</span>
+            Enterprise-grade web
+            <span className={styles.accent}> consulting</span>
           </h2>
           <p className={styles.subtitle}>
-            A complete toolkit engineered for teams who refuse to compromise on
-            speed, security, or developer experience.
+            We design, build, and optimize high-end digital applications tailored to your marketing objectives and business operations.
           </p>
         </div>
 

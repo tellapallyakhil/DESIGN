@@ -176,7 +176,159 @@
   color: var(--text-tertiary);
 }
 
+/* Error Text */
+.errorText {
+  color: var(--neon-pink-light);
+  font-size: 0.85rem;
+  margin-top: -8px;
+  margin-bottom: var(--space-md);
+  text-align: center;
+  font-family: var(--font-mono);
+  text-shadow: 0 0 10px rgba(255, 45, 120, 0.2);
+}
+
+/* Scheduler */
+.scheduler {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 600px;
+  margin: var(--space-xl) auto var(--space-2xl);
+  text-align: left;
+}
+
+.scheduleSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.sectionHeading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.dateGrid, .timeGrid {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.dateGrid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.timeGrid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.selectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem var(--space-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-base);
+  color: var(--text-secondary);
+}
+
+.selectCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--glass-border-hover);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.cardActive {
+  background: rgba(255, 45, 120, 0.08) !important;
+  border-color: var(--neon-pink) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 0 12px rgba(255, 45, 120, 0.2);
+}
+
+.selectLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.selectValue {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.timeValue {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btnRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.ctaBtnSecondary {
+  padding: 0.85rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.ctaBtnSecondary:hover {
+  color: var(--text-primary);
+  border-color: var(--glass-border-hover);
+}
+
+/* Success Flow */
+.successFlow {
+  padding: var(--space-xl) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.successIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(40, 200, 64, 0.1);
+  border: 2px solid #28c840;
+  color: #28c840;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: var(--space-xl);
+  box-shadow: 0 0 20px rgba(40, 200, 64, 0.2);
+}
+
 /* Responsive */
+@media (max-width: 768px) {
+  .dateGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .timeGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 640px) {
   .card {
     padding: var(--space-3xl) var(--space-xl);
@@ -184,9 +336,31 @@
 
   .inputGroup {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .inputWrapper {
+    width: 100%;
   }
 
   .ctaBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dateGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .timeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btnRow {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-sm);
+  }
+  .btnRow button {
     width: 100%;
   }
 }

@@ -26,20 +26,20 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <ul className={styles.links}>
-          <li><a href="/#features" id="nav-features">Features</a></li>
-          <li><a href="/#stats" id="nav-stats">Metrics</a></li>
+          <li><a href="/#features" id="nav-features">Services</a></li>
+          <li><a href="/#stats" id="nav-stats">Results</a></li>
           <li><a href="/#testimonials" id="nav-testimonials">Testimonials</a></li>
-          <li><a href="/#pricing" id="nav-pricing">Pricing</a></li>
+          <li><a href="/#pricing" id="nav-pricing">Packages</a></li>
           <li><a href="/about" id="nav-about">About</a></li>
         </ul>
 
         {/* CTA */}
         <div className={styles.actions}>
           <a href="/#cta" className={styles.loginBtn} id="nav-login">
-            Log in
+            Free Audit
           </a>
           <a href="/#cta" className={styles.ctaBtn} id="nav-get-started">
-            Get Started
+            Book a Call
             <span className={styles.ctaBtnGlow} />
           </a>
         </div>
@@ -60,13 +60,13 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className={styles.mobileMenu} id="mobile-menu">
-          <a href="/#features" onClick={() => setMobileOpen(false)}>Features</a>
-          <a href="/#stats" onClick={() => setMobileOpen(false)}>Metrics</a>
+          <a href="/#features" onClick={() => setMobileOpen(false)}>Services</a>
+          <a href="/#stats" onClick={() => setMobileOpen(false)}>Results</a>
           <a href="/#testimonials" onClick={() => setMobileOpen(false)}>Testimonials</a>
-          <a href="/#pricing" onClick={() => setMobileOpen(false)}>Pricing</a>
+          <a href="/#pricing" onClick={() => setMobileOpen(false)}>Packages</a>
           <a href="/about" onClick={() => setMobileOpen(false)}>About</a>
           <a href="/#cta" className={styles.ctaBtn} onClick={() => setMobileOpen(false)}>
-            Get Started
+            Book a Call
           </a>
         </div>
       )}

@@ -3,17 +3,17 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./Hero.module.css";
 
 const terminalLines = [
-  { type: "command", text: "$ startr init my-saas-app" },
-  { type: "output", text: "⚡ Scaffolding project..." },
-  { type: "output", text: "📦 Installing 47 optimized packages" },
-  { type: "output", text: "🧠 AI analyzing project structure..." },
-  { type: "success", text: "✓ Auth system generated" },
-  { type: "success", text: "✓ Database schema created" },
-  { type: "success", text: "✓ API routes configured" },
-  { type: "success", text: "✓ CI/CD pipeline ready" },
-  { type: "command", text: "$ startr deploy --prod" },
-  { type: "output", text: "🚀 Deploying to edge network..." },
-  { type: "highlight", text: "✦ Live at https://my-saas-app.startr.dev" },
+  { type: "command", text: "$ startr-architect deploy --enterprise" },
+  { type: "output", text: "⚡ Scaffolding secure multi-region architecture..." },
+  { type: "output", text: "📦 Connecting AWS load balancers & Redis cache layers" },
+  { type: "output", text: "🎨 Compiling corporate design systems & global UI tokens" },
+  { type: "success", text: "✓ Enterprise security & SSO auth integrated" },
+  { type: "success", text: "✓ Core Web Vitals optimized (Lighthouse: 100)" },
+  { type: "success", text: "✓ API middleware & CRM pipeline online" },
+  { type: "command", text: "$ startr-architect verify --compliance" },
+  { type: "output", text: "🔒 Auditing SOC 2, HIPAA, and GDPR controls..." },
+  { type: "success", text: "✓ All governance and security policies validated" },
+  { type: "highlight", text: "✦ Deployment complete: https://portal.enterprise.startr.services" },
 ];
 
 export default function Hero() {
@@ -58,7 +58,7 @@ export default function Hero() {
         {/* Badge */}
         <div className={styles.badge} id="hero-badge">
           <span className={styles.badgeDot} />
-          <span>Now in Public Beta</span>
+          <span>Enterprise Digital Consulting</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14m-7-7 7 7-7 7" />
           </svg>
@@ -66,42 +66,40 @@ export default function Hero() {
 
         {/* Glitch Title */}
         <h1 className={styles.title} id="hero-title">
-          <span className={styles.titleLine}>Build the Future</span>
-          <span className={styles.glitchWrap} data-text="Ship at Light Speed">
-            <span className={styles.titleAccent}>Ship at Light Speed</span>
+          <span className={styles.titleLine}>Engineering Scalable</span>
+          <span className={styles.glitchWrap} data-text="Digital Transformation">
+            <span className={styles.titleAccent}>Digital Transformation</span>
           </span>
         </h1>
 
         <p className={styles.subtitle} id="hero-subtitle">
-          The AI-powered platform that transforms your ideas into production-ready
-          products. From concept to launch in{" "}
-          <span className={styles.highlight}>minutes, not months.</span>
+          Next-generation web architectures, custom digital product engineering, and technical speed optimization for global enterprises.
         </p>
 
         {/* CTA Group */}
         <div className={styles.ctaGroup}>
           <a href="#cta" className={styles.ctaPrimary} id="hero-cta-primary">
-            <span className={styles.ctaText}>Start Building Free</span>
+            <span className={styles.ctaText}>Consult with an Architect</span>
             <span className={styles.ctaIcon}>→</span>
             <span className={styles.ctaShimmer} />
           </a>
           <a href="#features" className={styles.ctaSecondary} id="hero-cta-secondary">
-            <span className={styles.playIcon}>▶</span>
-            <span>Watch Demo</span>
+            <span className={styles.playIcon}>✦</span>
+            <span>Explore Services</span>
           </a>
         </div>
 
         {/* Trust Signals */}
         <div className={styles.trustRow} id="hero-trust">
           <div className={styles.avatarStack}>
-            {["🟣", "🔵", "🩷", "🟢", "🟡"].map((dot, i) => (
-              <span key={i} className={styles.avatar} style={{ animationDelay: `${i * 0.1}s` }}>
+            {["🌟", "🌟", "🌟", "🌟", "🌟"].map((dot, i) => (
+              <span key={i} className={styles.avatar} style={{ animationDelay: `${i * 0.1}s`, border: "none", background: "transparent", fontSize: "0.95rem" }}>
                 {dot}
               </span>
             ))}
           </div>
           <p className={styles.trustText}>
-            <strong>2,400+</strong> builders already shipping
+            Trusted by <strong>Fortune 500</strong> industry leaders
           </p>
         </div>
       </div>
@@ -116,7 +114,7 @@ export default function Hero() {
               <span className={styles.dotGreen} />
             </div>
             <span className={styles.termTab}>
-              <span className={styles.termTabIcon}>⬡</span> startr — zsh
+              <span className={styles.termTabIcon}>⬡</span> startr-systems — zsh
             </span>
             <div className={styles.termActions}>
               <span className={styles.termAction}>◻</span>
@@ -151,14 +149,14 @@ export default function Hero() {
         <div className={`${styles.chip} ${styles.chip1}`}>
           <span className={styles.chipIcon}>⚡</span>
           <div>
-            <span className={styles.chipLabel}>Deploy Time</span>
-            <span className={styles.chipValue}>2.4s</span>
+            <span className={styles.chipLabel}>Architectures Built</span>
+            <span className={styles.chipValue}>120+</span>
           </div>
         </div>
         <div className={`${styles.chip} ${styles.chip2}`}>
           <span className={styles.chipIcon}>📈</span>
           <div>
-            <span className={styles.chipLabel}>Uptime</span>
+            <span className={styles.chipLabel}>Uptime SLA</span>
             <span className={styles.chipValue}>99.99%</span>
           </div>
         </div>

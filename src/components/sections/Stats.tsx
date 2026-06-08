@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./Stats.module.css";
 
 const stats = [
-  { value: 99.99, suffix: "%", label: "Uptime SLA", prefix: "" },
-  { value: 2.4, suffix: "s", label: "Avg Deploy Time", prefix: "" },
-  { value: 150, suffix: "K+", label: "APIs Served Daily", prefix: "" },
-  { value: 50, suffix: "ms", label: "Global Latency", prefix: "<" },
+  { value: 99.9, suffix: "%", label: "Project Delivery Rate", prefix: "" },
+  { value: 85, suffix: "%+", label: "Avg. Page Speed Boost", prefix: "" },
+  { value: 120, suffix: "+", label: "Digital Products Shipped", prefix: "" },
+  { value: 4.2, suffix: "x", label: "Average Client ROI", prefix: "" },
 ];
 
 function AnimatedNumber({

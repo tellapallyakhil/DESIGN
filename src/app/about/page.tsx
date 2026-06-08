@@ -4,33 +4,33 @@ import Footer from "@/components/layout/Footer";
 import styles from "./about.module.css";
 
 const milestones = [
-  { year: "2024", event: "Idea born — frustrated by slow deployment pipelines" },
-  { year: "2024", event: "First prototype built in a weekend hackathon" },
-  { year: "2025", event: "Closed pre-seed round, assembled core team" },
-  { year: "2025", event: "Private alpha launch — 200 early adopters" },
-  { year: "2026", event: "Public beta — 2,400+ builders and counting" },
+  { year: "2024", event: "Agency founded — starting out with custom website design" },
+  { year: "2024", event: "Expanded services to full-stack Next.js and custom web apps" },
+  { year: "2025", event: "Pioneered automated conversion & performance optimization audits" },
+  { year: "2025", event: "Served 50+ clients globally, driving over $10M in client revenue" },
+  { year: "2026", event: "Expanded team to provide end-to-end design, dev, and SEO solutions" },
 ];
 
 const values = [
   {
     icon: "⚡",
-    title: "Speed is a Feature",
-    description: "Every millisecond matters. We obsess over performance so our users never have to wait.",
+    title: "Performance First",
+    description: "Speed dictates conversion. We optimize every pixel so your visitors never wait.",
   },
   {
-    icon: "🔓",
-    title: "Radically Open",
-    description: "Transparent roadmap, open source core, and honest communication — always.",
+    icon: "🤝",
+    title: "Transparent Partner",
+    description: "Honest feedback, detailed timelines, and direct collaboration — always.",
   },
   {
     icon: "🎯",
-    title: "Builder-First",
-    description: "We build for builders. Every feature is designed by engineers, for engineers.",
+    title: "Conversion-Focused",
+    description: "We design with purpose. Every layout is structured to drive leads, signups, or sales.",
   },
   {
     icon: "🌏",
-    title: "Global by Default",
-    description: "Edge-first architecture means your product is fast for everyone, everywhere.",
+    title: "Modern Stacks",
+    description: "We leverage Next.js, Headless CMS, and edge-first CDN delivery for future-proof sites.",
   },
 ];
 
@@ -46,13 +46,12 @@ export default function AboutPage() {
           <div className={styles.container}>
             <span className={styles.eyebrow}>About Us</span>
             <h1 className={styles.heroTitle} id="about-title">
-              We&apos;re building the platform
+              Crafting digital experiences
               <br />
-              <span className={styles.accent}>we always wanted</span>
+              <span className={styles.accent}>that demand attention</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Born from frustration with the status quo. Startr exists because
-              shipping software should be exhilarating, not excruciating.
+              Born from a passion for clean code and loading speeds. Startr is a premium digital agency that builds high-end web applications and optimizes Core Web Vitals to elevate your business.
             </p>
           </div>
         </section>
@@ -91,17 +90,15 @@ export default function AboutPage() {
                 <div className={styles.founderInfo}>
                   <span className={styles.founderLabel}>Founder & CEO</span>
                   <h2 className={styles.founderName} id="founder-name">
-                    Anonymous
+                    Akhil Tellapally
                   </h2>
                   <div className={styles.founderBio}>
                     <p>
-                      A passionate engineer and entrepreneur who believes the best
-                      tools should be accessible to every builder — not just
-                      well-funded teams at big tech companies.
+                      A passionate developer and digital strategist dedicated to delivering high-end web solutions. Akhil is obsessed with blending cutting-edge technology with conversion-focused design to help brands stand out.
                     </p>
                     <p>
                       His vision is simple — <span className={styles.bioHighlight}>
-                        remove every obstacle between a builder and their shipped product.
+                        remove every technical barrier between your business and its digital growth.
                       </span>
                     </p>
                   </div>
@@ -142,17 +139,15 @@ export default function AboutPage() {
                 <div className={styles.founderInfo}>
                   <span className={styles.founderLabel}>Co-Founder & CTO</span>
                   <h2 className={styles.founderName} id="cofounder-name">
-                    [Name Coming Soon]
+                    Amrith Sandesh
                   </h2>
                   <div className={styles.founderBio}>
                     <p>
-                      The engineering mind behind Startr&apos;s lightning-fast
-                      infrastructure. Obsessed with developer experience, system
-                      design, and pushing the boundaries of what&apos;s possible on the edge.
+                      A performance-obsessed software engineer leading the agency&apos;s technical initiatives. Amrith specializes in Next.js development, Core Web Vitals optimization, and technical SEO architectures.
                     </p>
                     <p>
                       His philosophy — <span className={styles.bioHighlight}>
-                        if a developer has to think about infrastructure, we&apos;ve already failed.
+                        if a website takes more than two seconds to load, it&apos;s failing your customers.
                       </span>
                     </p>
                   </div>
@@ -236,13 +231,13 @@ export default function AboutPage() {
             <div className={styles.ctaCard}>
               <div className={styles.ctaOrb} />
               <h2 className={styles.ctaTitle}>
-                Ready to join the <span className={styles.accent}>movement</span>?
+                Ready to launch your <span className={styles.accent}>project</span>?
               </h2>
               <p className={styles.ctaSubtitle}>
-                Start building with Startr today. Free forever for side projects.
+                Let&apos;s create a high-performance web experience for your business today.
               </p>
               <a href="/#cta" className={styles.ctaBtn} id="about-cta-btn">
-                Get Started Free
+                Request a Consultation
                 <span className={styles.ctaShimmer} />
               </a>
             </div>
